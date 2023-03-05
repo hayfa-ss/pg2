@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ma boutique en ligne</title>
+</head>
+<body background="background.jpg">
+	<h1>Ma boutique en ligne</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Nom du produit</th>
+				<th>Prix</th>
+				<th>Quantité disponible</th>
+				<th>Ajouter au panier</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>ecran solaire1</td>
+				<td>20€</td>
+				<td>10</td>
+				<td><input type="checkbox" id="produit1" onclick="ajouterProduit('produit 1', 20)"></td>
+			</tr>
+			<tr>
+				<td>gel nettoyant1</td>
+				<td>25€</td>
+				<td>5</td>
+				<td><input type="checkbox" id="produit2" onclick="ajouterProduit('produit 2', 25)"></td>
+			</tr>
+			<tr>
+				<td>ecran solaire 2</td>
+				<td>30€</td>
+				<td>3</td>
+				<td><input type="checkbox" id="produit3" onclick="ajouterProduit('produit 3', 30)"></td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>Panier</h2>
+	<ul id="panier">
+	</ul>
+	<h3>Total : <span id="total">0€</span></h3>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+    <script>
+        // Initialisation du panier
+let panier = [];
+
+// Fonction pour ajouter un produit au panier
+function ajouterProduit(nom, prix) {
+	// Vérifier si le produit est déjà dans le panier
+	let produitExiste = false;
+	for (let i = 0; i < panier.length; i++) {
+		if (panier[i].nom === nom) {
+			panier[i].quantite++;
+			produitExiste = true;
+			break;
+		}
+	}
+
+	// Si le produit n'est pas dans le panier, l'ajouter
+	if (!produitExiste) {
+		panier.push({
+			nom: nom,
+			prix: prix,
+			quantite: 1
+		});
+	}
+
+	// Mettre à jour l'affichage du panier
+	afficherPanier();
+}
+
+// Fonction pour afficher le contenu du panier et le total
+function afficherPanier() {
+	let panierElement = document.getElementById('panier');
+	let totalElement = document.getElementById('total');
+
+	// Réinitialiser le contenu du panier et le total
+	panierElement.innerHTML = '';
+	let total = 0;
+
+	// Parcourir le panier et afficher chaque produit
+	for (let i = 0; i < panier.length; i++) {
+		let produit = panier[i];
+		let produitElement = document.createElement('li');
+		produitElement.innerHTML = produit.nom + ' - ' + produit.quantite + ' x ' + produit.prix + '€';
+		panierElement.appendChild(produitElement);
+
+		// Calculer le prix total de ce produit
+		let prixTotalProduit = produit.quantite *
+        produit.prix;
+		total += prixTotalProduit;
+	}
+
+	// Afficher le total
+	totalElement.innerHTML = total + '€';
+}
+
+    </script>
+  </footer>
+  </html>

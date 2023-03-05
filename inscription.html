@@ -4,19 +4,75 @@
 	<title>User Registration Form</title>
     <link rel="stylesheet" type="text/css" href="inscription.css">
 </head>
-<body>
+<body background="background.jpg">
+	<header></header>
+	<section>
+	<div id="form-container">
 	<form>
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" required>
-
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required>
-
-		<label for="password">Password:</label>
-		<input type="password" id="password" name="password" required>
-
-		<input type="submit" value="Submit" onclick="submitForm(event)">
+		<div>
+            <label> nom*</label>
+            <input type="text"  minlength="5" required> <br>
+        </div>
+        <div>
+            <label>Prénom</label>
+            <input type="text"  minlength="5" required><br>
+        </div>
+        <div>
+            <label> Adresse</label>
+            <input type="text" maxlength="10" required><br>
+        </div>
+        <div>   
+            <label>Code postal </label>
+            <input type="text" id="code" name="code" pattern="0\d{3}" size="4" required ><br>
+        </div> 
+		<div>
+            <label>Mot de passe*</label>
+            <input type="password" id="pwd" pattern="(?=*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title ="Must contain at least one number and one uppercase and lowercase letter ,and at least 8 or more characters"><br>
+		</div>
+		<div>
+		<label>Confirmer*</label>
+            <input type="password"><br>
+		</div>
+		<div>
+            <input type="submit" value="Submit" >
+            <input type="submit" value="Reset" >
+		</div>
 	</form>
+</section>
+<footer>
+	<ul class="hit">
+	<table>
+		<tr>
+			<td>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+
+	
+	<li>
+		<img src="C:\Users\hayfa\Desktop\pg2\hhh.jpg" alt="iyed" height="100px">
+		<p>Iyed said</p>
+		<p>29330681</p>
+		<p>contactez nous</p> <a href="iyed.said@esprit.tn">iyed.said@esprit.tn</a>
+	</li>
+
+</td>
+<td>
+	<li>
+	<img src="C:\Users\hayfa\Desktop\pg2\haifa - Copie.jpg" alt="iyed said" height="90px">
+	<p>Hayfa sadkaoui</p>
+	<p> 26549336</p>
+	<p>contactez nous   </p> <a href="mailto:hayfa.sadkaouil@esprit.tn">hayfa.sadkaoui@esprit.tn</a>
+	</li>
+
+</td>
+</tr>
+</table>
+</ul>
+
+</footer>
+</body>
 
 	<script>
 		function submitForm(event) {
@@ -30,5 +86,6 @@
 			// Here you can add the code to submit the form data to a server using AJAX or fetch()
 		}
 	</script>
+	<footer
 </body>
 </html>

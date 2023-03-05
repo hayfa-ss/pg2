@@ -2,144 +2,169 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Liste de produits cosmétiques pour femmes</title>
-  <link rel="stylesheet" href="projet.css">
+	<title>écrans solaires </title>
+	<link rel="stylesheet" href="projet.css">
   <link rel="stylesheet" href="maman.css">
-    
-	<style>/* styles pour l'en-tête */
-        header {
-          background-color: #ffffff;
+  <button onClick="addToCart(product)">Ajouter au panier</button>
+  <script src="panier.js"></script>
+  <style>
+	 header {
+          background-color:#faf4f4;
           border-bottom: 1px solid #cccccc;
-          padding: 10px;
+          padding:10 px ;
         }
-        
-        header h1 {
-          font-size: 36px;
-          
-          color: #333333;
-          margin: 0;
-        }
-        
-        /* styles pour la navigation */
-        nav {
-          background-color: #f2f2f2;
-          padding: 10px;
-        }
-        
-        nav ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-        
-        nav li {
-          display: inline-block;
-          margin-right: 20px;
-        }
-        
-        nav a {
-          color: #333333;
-          text-decoration: none;
-        }
-        
-        nav a:hover {
-          color: #ffffff;
-          background-color: #333333;
-        }
-        
-        /* styles pour les produits */
-        .product-list {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-        
-        .product-list li {
-          display: inline-block;
-          width: 30%;
-          margin: 1.5%;
-          vertical-align: top;
-          background-color: #ffffff;
-          box-shadow: 0px 2px 2px #cccccc;
-        }
-        
-        .product-list li:hover {
-          box-shadow: 0px 2px 2px #999999;
-        }
-        
-        .product-list li img {
-          display: block;
-          width: 100%;
-          height: auto;
-        }
-        
-        .product-list li h3 {
-          font-size: 24px;
-          color: #333333;
-          margin: 10px;
-        }
-        
-        .product-list li .price {
-          font-size: 18px;
-          color: #cc0000;
-          margin: 10px;
-        }
-        
-        .product-list li .description {
-          font-size: 16px;
-          color: #666666;
-          margin: 10px;
-        }
-        </style>
+    header h1 {
+      font size: 36px;
+      color : #b99c9c ;
+      margin :0;
+    }
+  </style>
+    
+	
 </head>
-<body>
+<body background="background.jpg">
 	<header>
-		<h1>Liste de produits cosmétiques pour femmes</h1>
+		<h1>ecrans solaires en stock</h1>
 	</header>
-</header>
 <div style="display: block;">
 	<main>
+		<table>
+			<tr>
+				<td>
 		
 		<ul class="product-list">
 			<li>
-				<img src="C:\Users\hayfa\Desktop\ecran\téléchargement.jpg"alt="produit 1">
-        <p class="price">49,99 dt</p>
-				<p class="description">Soin hydratant lumiére destresse ,lisse et illumine le teint aux extraits de litchi et thé blanc pour peaux normales 50ml.</p>
+				<img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\44.jpg"alt="produit 1">
+                <p class="price">49,99 dt</p>
+				<p class="description">Soin hydratant lumiére destresse ,lisse et illumine le teint aux extrait.</p>
 			</li>
+		</td>
+		<td>
       <li>
-				<img src="C:\Users\hayfa\Desktop\ecran\è.jpg" alt="produit 2">
-        <p class="price">70,500 dt</p>
-				<p class="description">Pour estomper des vergetures existantes ou prévenir leur apparition durant la grossesse, la crème anti-vergetures Vichy Action Intégrale s'avère tout indiquée. Protecteur et correctif à la fois, le produit est en outre réputé pour sa haute tolérance..</p>
+				<img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\(.jpg" alt="produit 2">
+                <p class="price">70,500 dt</p>
+				<p class="description">Pour estrale s'avère tout indiquée. Protecteur et correctie..</p>
 			</li>
-			<li>
-				<img src="C:\Users\hayfa\Desktop\ecran\- - Copie.jpg"alt="Produit 3">
-				<p class="price">49,99 dt</p>
-				<p class="description">un gommage profond du corps .</p>
-			</li>
-			
-			<img src="C:\Users\hayfa\Desktop\ecran\'.jpg" alt="Produit 3">
-				<p class="price">49,99 dt</p>
-				<p class="description">un gommage profond du corps .</p>
-			</li>
-			
-			<img src="C:\Users\hayfa\Desktop\ecran\.jpg"alt="Produit 4">
-				<p class="price">49,99 dt</p>
-				<p class="description">un gommage profond du corps .</p>
-			</li>
-			
-			<img src="C:\Users\hayfa\Desktop\ecran\'.jpg" alt="Produit 3">
-				<p class="price">49,99 dt</p>
-				<p class="description">un gommage profond du corps .</p>
-			</li>
-			
-			<img src="C:\Users\hayfa\Desktop\ecran\'.jpg" alt="Produit 3">
-				<p class="price">49,99 dt</p>
-				<p class="description">un gommage profond du corps .</p>
-			</li>
-			
+		</td>
 		
-				
-</div>   
+			<td>
+			<li>
+				<img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\'.jpg"alt="Produit 3">
+				<p class="price">49,99 dt</p>
+				<p class="description">un gommage profond du corps .</p>
+			</li>
+			
+		</td>
+	</tr>
+	<tr>
+	
+		<td>
+      <li>
+			
+			    <img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\-.jpg" alt="Produit 4">
+				<p class="price">49,99 dt</p>
+				<p class="description">un gommage profond du corps .</p>
+			</li>
+		</td>
+		
+			
+				<td>
+      <li>
+			
+			    <img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\22.jpg"alt="Produit 5">
+				<p class="price">49,99 dt</p>
+				<p class="description">un gommage profond du corps .</p>
+			</li>
+		</td>
+		<td>
+      <li>
+			
+			    <img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\33.jpg" alt="Produit 6">
+				<p class="price">49,99 dt</p>
+				<p class="description">un gommage profond du corps .</p>
+			</li>
+		</td>
+		</tr>
+	</table>
+	<style>
+		header {
+			 background-color:#faf4f4;
+			 border-bottom: 1px solid #cccccc;
+			 padding:10 px ;
+		   }
+	   header h1 {
+		 font size: 36px;
+		 color : #b99c9c ;
+		 margin :0;
+	   }
+	 </style>
+	   
+	   
+   </head>
+   <body background="background.jpg">
+	   <header>
+		   <h1>gel nettoyant en stock </h1>
+	   </header>
+	   <main>
+		<table>
+			<tr>
+				<td>
+		
+		<ul class="product-list">
+			<li>
+				<img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\44.jpg"alt="produit 1">
+                <p class="price">49,99 dt</p>
+				<p class="description">Soin hydratant lumiére destresse ,lisse et illumine le teint aux extrait.</p>
+			</li>
+		</td>
+		<td>
+      <li>
+				<img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\(.jpg" alt="produit 2">
+                <p class="price">70,500 dt</p>
+				<p class="description">Pour estrale s'avère tout indiquée. Protecteur et correctie..</p>
+			</li>
+		</td>
+		
+			<td>
+			<li>
+				<img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\'.jpg"alt="Produit 3">
+				<p class="price">49,99 dt</p>
+				<p class="description">un gommage profond du corps .</p>
+			</li>
+			
+		</td>
+	</tr>
+	<tr>
+	
+		<td>
+      <li>
+			
+			    <img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\-.jpg" alt="Produit 4">
+				<p class="price">49,99 dt</p>
+				<p class="description">un gommage profond du corps .</p>
+			</li>
+		</td>
+		
+			
+				<td>
+      <li>
+			
+			    <img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\22.jpg"alt="Produit 5">
+				<p class="price">49,99 dt</p>
+				<p class="description">un gommage profond du corps .</p>
+			</li>
+		</td>
+		<td>
+      <li>
+			
+			    <img src="C:\Users\hayfa\Desktop\pg2\ecran - Copie\33.jpg" alt="Produit 6">
+				<p class="price">49,99 dt</p>
+				<p class="description">un gommage profond du corps .</p>
+			</li>
+		</td>
+		</tr>
+	</table>
+
 </div> 
 </body>
 </html>

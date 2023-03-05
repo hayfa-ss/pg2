@@ -1,4 +1,6 @@
-
+.hit{
+    float: right;
+}
 form {
     display: flex;
     flex-direction: column;

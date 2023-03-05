@@ -1,0 +1,33 @@
+.cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .cart h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .cart-item span {
+    flex-basis: 25%;
+  }
+  
+  .cart-item input[type="number"] {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .cart-total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
